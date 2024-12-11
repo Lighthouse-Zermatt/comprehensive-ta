@@ -1,0 +1,9 @@
+[tool.black]
+line-length = 100  # Maximum line length (default is 88)
+target-version = ['py311']
+force-exclude = '''
+/(
+    |\.git
+    |RnD
+)/
+'''

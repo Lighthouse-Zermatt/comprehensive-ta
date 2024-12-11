@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+numpy = "*"
+pandas = "*"
+pandas_ta = "*"
+talipp = "*"
+
+[dev-packages]
+pylint = "3.3.1"
+mypy = "*"
+pre-commit = "*"
+black = "*"
+pytest = "*"
+pytest-mock = "*"
+pandas-stubs = "*"
+
+[requires]
+python_version = "3.11"
+python_full_version = "3.11.7"
+
+[scripts]
+start = "python -m castello_technical_indicators"
+test = "pytest -vv"
+setup = "pre-commit install"
