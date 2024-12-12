@@ -1,9 +1,34 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "comprehensive_ta"
+version = "0.1.0"
+authors = [
+    { name = "Francesco Virga", email = "francesco.virga@gmail.com" },
+    { name = "Ali Akram", email = "akramsystem@gmail.com" },
+    { name = "Abdu Raditya", email = "radi.kh.abdu@gmail.com" },
+]
+description = "A comprehensive technical analysis library for financial markets"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "pandas_ta",
+    "talipp",
+]
+
+[project.urls]
+Homepage = "https://github.com/Lighthouse-Zermatt/comprehensive-ta"
+Issues = "https://github.com/Lighthouse-Zermatt/comprehensive-ta/issues"
+
 [tool.black]
-line-length = 100  # Maximum line length (default is 88)
+line-length = 100
 target-version = ['py311']
-force-exclude = '''
-/(
-    |\.git
-    |RnD
-)/
-'''

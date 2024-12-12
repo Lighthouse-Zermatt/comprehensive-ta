@@ -19,8 +19,8 @@ pytest-mock = "*"
 pandas-stubs = "*"
 
 [requires]
-python_version = "3.11"
-python_full_version = "3.11.7"
+python_version = "3.8"
+python_full_version = "3.8.10"
 
 [scripts]
 start = "python -m castello_technical_indicators"
