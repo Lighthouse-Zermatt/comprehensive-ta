@@ -6,9 +6,14 @@ from talipp.indicators import PivotsHL
 from talipp.indicators.PivotsHL import PivotType
 
 # TODO: ensure data is normalized to a frequency each one expects
+# TODO: Why do some functions return a Series and others a DataFrame?
 
+
+# TODO: What are these? Do they need to be configurable by a user?
 PPL_HIGH_PERIOD = 5
 PPL_LOW_PERIOD = 5
+
+# TODO: Finish adding tests, currently done everything up until arnaud_legoux_moving_average
 
 
 def get_24h_volume(volume: pd.Series):
@@ -159,9 +164,6 @@ def arnaud_legoux_moving_average(close: pd.Series):
         close,
         length=length,
     )
-
-
-# TODO: Tests done up till here
 
 
 def balance_of_power(
